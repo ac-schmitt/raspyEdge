@@ -1,0 +1,254 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"syntax",
+				"Set Syntax: Python"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":q",
+				"Snippet: Quote Block"
+			],
+			[
+				"ascii",
+				"Set Syntax: AsciiDoc (Asciidoctor)"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 277.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alexander/Workspaces/github/raspyEdge"
+	],
+	"file_history":
+	[
+		"/Users/alexander/Workspaces/github/python-samplemod/sample/core.py",
+		"/Users/alexander/Workspaces/github/python-samplemod/README.rst",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/alexander/Workspaces/github/python-samplemod/requirements.txt",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/Users/alexander/OneDrive/Workspace/Python/RaspEdge/awsiotpub.py",
+		"/Users/alexander/OneDrive/Workspace/Python/RaspEdge/sensortag.py",
+		"/Users/alexander/OneDrive/Workspace/AWS/Policy Requests/AdminUnmanagedWAF.json",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/alexander/Workspaces/github/webgoat-tools/README.md",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/alexander/OneDrive/Arbeit/Projekte/GSA/E-Mail Entwurf - SCEC-WAF.txt",
+		"/Users/alexander/Workspaces/github/webgoat-tools/init.d/webgoat",
+		"/Users/alexander/OneDrive/Workspace/AWS/user-data/user-data-setup-webgoat.sh",
+		"/Users/alexander/Desktop/LIZENZ.TXT",
+		"/Volumes/KEYS/wirkfunktion.de SSL Zertifikate/wirkfunktion_server.pem",
+		"/Volumes/KEYS/wirkfunktion.de SSL Zertifikate/wirkfunktion_server_2015-2.pem",
+		"/Users/alexander/OneDrive/Arbeit/Projekte/IoT/2016-05-30 IoT Showcase.mdown",
+		"/Users/alexander/OneDrive/Workspace/Python/HashHash/hashhash.py",
+		"/Users/alexander/OneDrive/Workspace/Python/HelloWorld/HelloLunch.py",
+		"/Users/alexander/OneDrive/Workspace/Python/HelloWorld/HelloWorld.py",
+		"/Users/alexander/Downloads/deluxegalagahd/!bttr!.txt",
+		"/Users/alexander/.ssh/known_hosts",
+		"/Volumes/vertraulich/Downloads/AJ.Applegate.No.Limits.XXX.720P.WEBRIP.MP4-GUSH/gush.aj.applegate.no.limits.720p.nfo",
+		"/Volumes/alexander/Software/2015-05-15 Bundlehunt (CommanderOne, etc)/tonalityck.txt",
+		"/Volumes/alexander/Software/2015-05-15 Bundlehunt (CommanderOne, etc)/ntfsformac14.txt",
+		"/Volumes/alexander/Software/2015-05-15 Bundlehunt (CommanderOne, etc)/intensifyck.txt",
+		"/Volumes/alexander/Software/2015-05-15 Bundlehunt (CommanderOne, etc)/commanderpro.txt",
+		"/Users/alexander/Desktop/= IoT Vision.adoc",
+		"/Users/alexander/Workspaces/Splunk/160513_00_411764.xml",
+		"/Users/alexander/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/alexander/Desktop/machinenames.md",
+		"/Users/alexander/Desktop/Monster High Musical.txt",
+		"/Users/alexander/Downloads/arc42-template-DE-withhelp-asciidoc/config.adoc",
+		"/Users/alexander/Downloads/arc42-template-DE-withhelp-asciidoc/01_introduction_and_goals.adoc",
+		"/Users/alexander/Desktop/Tristan Schmitt - Hilfeplangespräch.md",
+		"/Volumes/Transcend/Downloads/zkktyroqkozxuamndddjbjxovdmyzgxrkzy/Teens.Like.It.Rough.3.XXX.DVDRip.x264-STARLETS/Read.Me!.txt",
+		"/Volumes/media/Hörbücher/Kinder/Lauras Stern - Gutenacht-Geschichten/Lauras Stern - Gutenacht-Geschichten - Folge 01/Lauras Stern - Gutenacht-Geschichten.cue",
+		"/Volumes/NO NAME/Dark Lord - 04 - Der U.BMK",
+		"/Users/alexander/Dropbox/Rollenspiel/Kampagnen/Transhuman Space/Campaigns/ISRS.txt",
+		"/Volumes/alexander/Software/Xee License.txt",
+		"/Applications/gcs-4.3.0-mac/GURPS Character Sheet.app/Contents/Info.plist",
+		"/Applications/gcs-4.3.0-mac/GURPS Character Sheet.app/Contents/MacOS/gcs",
+		"/Users/alexander/Downloads/config.json",
+		"/Users/alexander/Desktop/Liebe Firma Schmidt.txt",
+		"/Users/alexander/Downloads/source-code-pro-2.010R-ro-1.030R-it/README.md"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"sha512"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"import",
+			"true",
+			"\\",
+			"sha256",
+			"ignored"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/",
+			"sha512",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "raspyedge.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
