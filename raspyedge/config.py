@@ -1,7 +1,6 @@
 # Copyright 2016 Alexander Schmitt
 
-# _aws_iot_endpoint = "data.iot.eu-west-1.amazonaws.com"
-_aws_iot_endpoint = "a2g3xx6wlrsv3g.iot.eu-west-1.amazonaws.com"
+_aws_iot_endpoint = "data.iot.eu-west-1.amazonaws.com"
 _aws_iot_port = 8883
 _aws_iot_clientid = "raspyedge"
 _aws_iot_thingname = "raspyedge"
