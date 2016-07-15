@@ -8,7 +8,7 @@ _aws_iot_capath = \
     "VeriSign-Class 3-Public-Primary-Certification-Authority-G5.pem"
 _aws_iot_certpath = ""
 _aws_iot_keypath = ""
-_aws_iot_heartbeat_rate = 1
+_aws_iot_heartbeat_rate = 5
 
 
 def aws_iot_endpoint():

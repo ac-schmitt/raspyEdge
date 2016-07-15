@@ -7,13 +7,15 @@ import config
 from time import sleep
 from datetime import datetime
 
-connflag = False
+pahoclient = paho.Client(client_id=config.aws_iot_clientid())
 
 
 def on_connect(client, userdata, flags, rc):
-    global connflag
-    connflag = True
-    print("Connection returned result: " + str(rc))
+    print("Connected!: " + str(rc))
+
+
+def on_publish(client, userdata, mid):
+    print("msg sent: " + str(userdata) + ", " + str(mid))
 
 
 def on_message(client, userdata, msg):
@@ -24,38 +26,32 @@ def on_log(client, userdata, level, buf):
     print("paho log: " + str(buf))
 
 
-def connect(thingname,
-            keyPath,
+def connect(keyPath,
             certPath=config.aws_iot_certpath(),
             awshost=config.aws_iot_endpoint(),
             awsport=config.aws_iot_port(),
             caPath=config.aws_iot_capath()):
-    mqttc = paho.Client(client_id=config.aws_iot_clientid())
-    mqttc.on_connect = on_connect
-    mqttc.on_message = on_message
-    mqttc.on_log = on_log
+    pahoclient.on_connect = on_connect
+    pahoclient.on_message = on_message
+    pahoclient.on_publish = on_publish
+    pahoclient.on_log = on_log
 
-    mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath,
-                  cert_reqs=ssl.CERT_REQUIRED,
-                  tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
+    pahoclient.tls_set(caPath, certfile=certPath, keyfile=keyPath,
+                       cert_reqs=ssl.CERT_REQUIRED,
+                       tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)
+    pahoclient.connect(awshost, awsport, keepalive=60)
+    pahoclient.loop_start()
 
-    mqttc.connect(awshost, awsport, keepalive=60)
 
-    mqttc.loop_start()
-
+def publish(thingname):
     while True:
-        if connflag is True:
-            heartbeat = datetime.utcnow().isoformat()
-            JSONPayload = '{"state":{"desired":{"heartbeat":"' + \
-                str(heartbeat) + '"}}}'
-            print(JSONPayload)
-            mqttc.publish("$aws/things/" + thingname +
-                          "/shadow/update", JSONPayload, qos=1)
-            print("msg sent: heartbeat " + str(heartbeat))
-        else:
-            print("waiting for connection...")
+        heartbeat = datetime.utcnow().isoformat()
+        JSONPayload = '{"state":{"desired":{"heartbeat":"' + \
+            str(heartbeat) + '"}}}'
+        pahoclient.publish("$aws/things/" + thingname +
+                           "/shadow/update", JSONPayload, qos=1)
         sleep(config.aws_iot_heartbeat_rate())
 
 
-connect("raspedge", "faafc87544-private.pem.key",
-        "faafc87544-certificate.pem.crt")
+connect("faafc87544-private.pem.key", "faafc87544-certificate.pem.crt")
+publish("raspedge")
