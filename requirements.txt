@@ -1,5 +1,5 @@
 nose
 sphinx
 pexpect
-paho
+paho-mqtt
 pypubsub

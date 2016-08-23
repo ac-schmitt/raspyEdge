@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .context import sample
+from raspyedge import config
 
 import unittest
 
@@ -8,8 +8,8 @@ import unittest
 class AdvancedTestSuite(unittest.TestCase):
     """Advanced test cases."""
 
-    def test_thoughts(self):
-        sample.hmm()
+    def test_config(self):
+        config.aws_iot_endpoint()
 
 
 if __name__ == '__main__':

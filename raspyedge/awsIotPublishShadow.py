@@ -3,6 +3,8 @@
 
 import paho.mqtt.client as paho
 import ssl
+import sys
+import getopt
 import config
 from time import sleep
 from datetime import datetime
@@ -43,7 +45,7 @@ def connect(keyPath,
     pahoclient.loop_start()
 
 
-def publish(thingname):
+def publish(thingname=config.aws_iot_thingname()):
     while True:
         heartbeat = datetime.utcnow().isoformat()
         JSONPayload = '{"state":{"desired":{"heartbeat":"' + \
@@ -53,5 +55,26 @@ def publish(thingname):
         sleep(config.aws_iot_heartbeat_rate())
 
 
-connect("faafc87544-private.pem.key", "faafc87544-certificate.pem.crt")
-publish("raspedge")
+def main(argv):
+    keyPath = config.aws_iot_keypath()
+    certPath = config.aws_iot_certpath()
+    thingName = config.aws_iot_thingname()
+
+    try:
+        opts, args = getopt.getopt(argv, "k:c:t:")
+    except getopt.GetoptError:
+        print("<script> -k <keyPath> -c <certPath> -t <thingName>")
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == "-k":
+            keyPath = arg
+        elif opt == "-c":
+            certPath = arg
+        elif opt == "-t":
+            thingName = arg
+
+    connect(keyPath, certPath)
+    publish(thingName)
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
